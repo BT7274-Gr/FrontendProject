@@ -9,7 +9,7 @@
     <title>Community Page</title>
     
 </head>
-<body>
+<body style="padding-top: 80px;">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <a class="navbar-brand" href="./home.html">The Community</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,6 +36,20 @@
   </div>
   <div class="ms-auto d-flex align-items-center" id="authSection"></div>
 </nav>
+<div class = "container mt-5">
+    <div class = 'card p-4 mb-5 shadow-sm'>
+        <h4>Create a Post</h4>
+        <input type="text" id = "postTitle" class = "form-control mb-2" placeholder="Title">
+        <textarea id="postBody" class = 'form-control mb-2' placeholder="Description"></textarea>
+        <button id="postPost" class="btn btn-primary rounded-pill">Post</button>
+    </div>
+    <h2 class = 'text-center mb-4'>The Community Feed</h2>
+    <div id = contentContainer class="row g-4"></div>
+</div>
+<div class = "container mt-5">
+    
+</div>
 <script src="../scripts/universal.js"></script>
+<script src="../scripts/community.js"></script>
 </body>
 </html>

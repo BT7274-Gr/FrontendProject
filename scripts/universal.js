@@ -14,4 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.replace("login.html"); 
         });
     }
+    else{
+        if (!window.location.pathname.endsWith('login.html') || !window.location.pathname.endsWith('registration.html'))
+        {
+            window.location.replace('login.html')
+        }
+    }
 });
