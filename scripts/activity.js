@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let submitButton = document.getElementById('postPost')
     let activeUser= JSON.parse(localStorage.getItem('activeUser'))
     let kingpinPost = document.getElementById('kingpinPost')
+    let userVector = JSON.parse(localStorage.getItem('users'))
+    let kingpin = userVector.find(user => user.kingpin === true)
+    let nameofFeed = document.getElementById('nameOfFeed')
+    nameofFeed.innerText = `${kingpin.name}'s feed`
     if(activeUser.kingpin !== true)
     {
         kingpinPost.classList.add('hide')

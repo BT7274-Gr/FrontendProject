@@ -5,4 +5,9 @@
 
 body{
     padding-top: 50px;
+    background-image: url('../backgroundimage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
