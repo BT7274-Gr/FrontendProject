@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     else{
-        if (!window.location.pathname.endsWith('login.html') || !window.location.pathname.endsWith('registration.html'))
+        if (!window.location.pathname.endsWith('login.html') && !window.location.pathname.endsWith('registration.html'))
         {
             window.location.replace('login.html')
         }
